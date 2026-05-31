@@ -1,0 +1,15 @@
+{
+  "urls": [
+    "https://example.com/page1",
+    "https://example.com/page2"
+  ],
+  "delay_sec": 1.5,
+  "output": "result.xlsx",
+  "fields": {
+    "タイトル":   { "selector": "h1" },
+    "価格":       { "selector": ".price" },
+    "説明":       { "selector": "p.description" },
+    "画像URL":    { "selector": "img.main", "attr": "src" },
+    "リンク一覧": { "selector": "a.item", "attr": "href", "all": true }
+  }
+}
